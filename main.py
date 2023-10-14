@@ -62,7 +62,7 @@ if __name__ == "__main__":
     customtkinter.set_default_color_theme("green")
     customtkinter.deactivate_automatic_dpi_awareness()
     root = customtkinter.CTk()
-    root.geometry("350x450")
+    root.geometry("350x400")
 
     clear_txt = customtkinter.CTkLabel(
         master=root,
@@ -111,7 +111,7 @@ if __name__ == "__main__":
         command=reserv_storage_off,
         fg_color=cb["color"],
     )
-    button_reserv_storage_off.place(relx=0.6, rely=0.5, anchor=tkinter.CENTER)
+    button_reserv_storage_off.place(relx=0.62, rely=0.5, anchor=tkinter.CENTER)
 
     button_reserv_storage_on = customtkinter.CTkButton(
         master=root,
@@ -120,7 +120,7 @@ if __name__ == "__main__":
         command=reserv_storage,
         fg_color=cb["color"],
     )
-    button_reserv_storage_on.place(relx=0.4, rely=0.5, anchor=tkinter.CENTER)
+    button_reserv_storage_on.place(relx=0.38, rely=0.5, anchor=tkinter.CENTER)
     # text 
     other_text = customtkinter.CTkLabel(
         master=root,
@@ -140,7 +140,7 @@ if __name__ == "__main__":
         command=hibernation_off,
         fg_color=cb["color"],
     )
-    button_hibernation_off.place(relx=0.6, rely=0.7, anchor=tkinter.CENTER)
+    button_hibernation_off.place(relx=0.62, rely=0.7, anchor=tkinter.CENTER)
 
     button_hibernation_on = customtkinter.CTkButton(
         master=root,
@@ -150,7 +150,7 @@ if __name__ == "__main__":
         fg_color=cb["color"],
         
     )
-    button_hibernation_on.place(relx=0.4, rely=0.7, anchor=tkinter.CENTER)
+    button_hibernation_on.place(relx=0.38, rely=0.7, anchor=tkinter.CENTER)
 
     root.mainloop()
 
